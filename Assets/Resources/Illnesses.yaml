@@ -1,0 +1,19 @@
+- name: Cancer
+  description: Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body.
+  symptoms:
+  - Swelling of lymph nodes
+  - Fever
+  - Shortness of breath
+  - Persistent fatigue
+  treatment:
+  - Chemotherapy
+  - Radiotherapy
+- name: Diabetes
+  description: Diabetes mellitus (DM), commonly known as diabetes, is a group of metabolic disorders characterized by a high blood sugar level over a prolonged period of time.
+  symptoms:
+  - Increased thirst
+  - Frequent urination
+  - Increased hunger
+  treatment:
+  - Insulin
+  - Metformin
