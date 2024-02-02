@@ -18,10 +18,11 @@ namespace Script
         public static List<Enums.Illness> Illnesses = new List<Enums.Illness>();
         void Awake()
         {
-            InitFiles();
+            ReadNames();
+            ReadIllnesses();
         }
 
-        public void InitFiles()
+        /*public void InitFiles()
         {
             string path1 = Application.dataPath + "/Resources/PatientNames.txt";
             string path2 = Application.dataPath + "/Resources/Illnesses.txt";
@@ -38,7 +39,7 @@ namespace Script
             {
                 Debug.Log(e);
             }
-        }
+        }*/
 
         public void ReadNames()
         {
