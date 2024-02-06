@@ -14,21 +14,26 @@ namespace Script
             .WithNamingConvention(CamelCaseNamingConvention.Instance).Build();
         public IDeserializer _deserializer = new DeserializerBuilder()
             .WithNamingConvention(CamelCaseNamingConvention.Instance).Build();
+
         public static List<string> PatientNames = new List<string>();
         public static List<Enums.Illness> Illnesses = new List<Enums.Illness>();
         void Awake()
         {
+            if(!System.IO.File.Exists(Application.dataPath + "/Resources/PatientNames.txt") || !System.IO.File.Exists(Application.dataPath + "/Resources/Illnesses.txt"))
+            {
+                InitFiles();
+            }
             ReadNames();
             ReadIllnesses();
         }
 
-        /*public void InitFiles()
+        public void InitFiles()
         {
             string path1 = Application.dataPath + "/Resources/PatientNames.txt";
             string path2 = Application.dataPath + "/Resources/Illnesses.txt";
             PatientNames.Add("Morty Smith");
             PatientNames.Add("Rick Sanchez");
-            Illnesses.Add(new Enums.Illness { Name = "Cancer", Description = "Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body.", Symptoms = new string[] { "Swelling of lymph nodes", "Fever", "Shortness of breath", "Persistent fatigue"}, Treatment = new string[] { "Chemotherapy", "Radiotherapy" } });
+            Illnesses.Add(new Enums.Illness { Name = "Cancer", Description = "Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body.", Symptoms = new string[] { "Swelling of lymph nodes", "Fever", "Shortness of breath", "Persistent fatigue" }, Treatment = new string[] { "Chemotherapy", "Radiotherapy" } });
             Illnesses.Add(new Enums.Illness { Name = "Diabetes", Description = "Diabetes mellitus (DM), commonly known as diabetes, is a group of metabolic disorders characterized by a high blood sugar level over a prolonged period of time.", Symptoms = new string[] { "Increased thirst", "Frequent urination", "Increased hunger" }, Treatment = new string[] { "Insulin", "Metformin" } });
             try
             {
@@ -39,7 +44,7 @@ namespace Script
             {
                 Debug.Log(e);
             }
-        }*/
+        }
 
         public void ReadNames()
         {
