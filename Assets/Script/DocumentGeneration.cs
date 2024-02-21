@@ -37,4 +37,9 @@ public class DocumentGeneration : MonoBehaviour
         //Example for getting first name
         Debug.Log(examplePatient.FirstName);
     }
+
+    private IEnumerator<float> BuildIllnesses()
+    {
+        yield return Timing.WaitForOneFrame;
+    }
 }
