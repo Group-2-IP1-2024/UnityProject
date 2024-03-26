@@ -14,17 +14,21 @@ public class CharacterScrip : MonoBehaviour
     public bool isRobot = false;
     
     public State state = State.Closed;
-
+    
     public Sprite chickenClosed;
     public Sprite chickenOpen;
     public Sprite chickenOrgans;
+    public Sprite paperClosed;
+    public Sprite paperOpen;
+    public Sprite paperOrgans;
+    public Sprite robotClosed;
+    public Sprite robotOpen;
+    public Sprite robotOrgans;
     public enum State
     {
         Closed,
         Opened,
-        Organs,
-        SingleOrgan,
-        TwoOrgans
+        Organs
     }
     // Start is called before the first frame update
     void Start()
@@ -49,6 +53,16 @@ public class CharacterScrip : MonoBehaviour
                     break;
             }
             //character.GetComponent<UnityEngine.UI.Image>().sprite
-        } 
+        }
+
+        if (isPaper)
+        {
+            switch (state)
+            {
+                case State.Closed:
+                    //character.GetComponent<UnityEngine.UI.Image>().sprite = 
+                    break;
+            }
+        }
     }
 }
