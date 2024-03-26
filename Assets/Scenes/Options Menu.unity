@@ -249,6 +249,76 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76637658}
   m_CullTransparentMesh: 1
+--- !u!1001 &115843209
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7070798
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.008068396
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7070798
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0033279164
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.003
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.923
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 641f48d76d474d64595f2ba4dbb3fdc8,
+        type: 3}
+      propertyPath: m_Name
+      value: IP1 Surgery Room (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: -5912657922292759682, guid: 641f48d76d474d64595f2ba4dbb3fdc8, type: 3}
+    - {fileID: 724960947647107204, guid: 641f48d76d474d64595f2ba4dbb3fdc8, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 641f48d76d474d64595f2ba4dbb3fdc8, type: 3}
 --- !u!1 &201033468
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,14 +458,14 @@ RectTransform:
   m_GameObject: {fileID: 287362657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.18116094, z: 0.23}
+  m_LocalScale: {x: 0.106284, y: 0.09627254, z: 0.1222266}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1839322217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -763, y: 384}
+  m_AnchoredPosition: {x: -408, y: 384}
   m_SizeDelta: {x: 1024, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &287362659
@@ -2818,7 +2888,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -3498,3 +3568,4 @@ SceneRoots:
   - {fileID: 1573109514}
   - {fileID: 908048835}
   - {fileID: 1730172079}
+  - {fileID: 115843209}

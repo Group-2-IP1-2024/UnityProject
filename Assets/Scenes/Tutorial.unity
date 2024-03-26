@@ -359,14 +359,14 @@ RectTransform:
   m_GameObject: {fileID: 238073877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.27759555, y: 0.8225053, z: 0.45089206}
+  m_LocalScale: {x: 0.33403072, y: 0.98972064, z: 0.54255843}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 664264725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.8, y: -8.5}
+  m_AnchoredPosition: {x: 12.9, y: -8.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &238073879
@@ -568,14 +568,14 @@ RectTransform:
   m_GameObject: {fileID: 483983023}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.31678647, y: 0.89393, z: 0.89393}
+  m_LocalScale: {x: 0.3699749, y: 1.0440209, z: 1.0440209}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 664264725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -9.1}
+  m_AnchoredPosition: {x: 15.7, y: -10}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &483983025
@@ -806,14 +806,14 @@ RectTransform:
   m_GameObject: {fileID: 591049017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.30712503, y: 1, z: 0.51389}
+  m_LocalScale: {x: 0.3505525, y: 1.1414, z: 0.58655405}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 664264725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -10.5}
+  m_AnchoredPosition: {x: 13.4, y: -15}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &591049019
@@ -837,7 +837,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: You will start by selecting one of these tools and then on its corresponding
-    body part which will be highlighted
+    body part which will be highlighted.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -941,7 +941,7 @@ RectTransform:
   m_GameObject: {fileID: 664264724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3624, y: 1.3624, z: 1.3624}
+  m_LocalScale: {x: 1.0613506, y: 1.0613506, z: 1.0613506}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 238073878}
@@ -954,7 +954,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85.4, y: 78}
+  m_AnchoredPosition: {x: -85.4, y: 77}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &664264726
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 39123d7e3eae6e54aa31c94ace8527ac, type: 3}
+  m_Texture: {fileID: 2800000, guid: b854db5114643b04fa6b358590966233, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1212,7 +1212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -216.1, y: 25.3}
+  m_AnchoredPosition: {x: -168, y: 20}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118635138
@@ -1566,14 +1566,14 @@ RectTransform:
   m_GameObject: {fileID: 1392855636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.30375, y: 0.70002, z: 0.49621}
+  m_LocalScale: {x: 0.35207665, y: 0.81139326, z: 0.57515705}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 664264725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.4, y: -7.9}
+  m_AnchoredPosition: {x: 13.4, y: -7.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1392855638
@@ -1737,14 +1737,14 @@ RectTransform:
   m_GameObject: {fileID: 1649010127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.29826224, y: 0.84975, z: 0.42165443}
+  m_LocalScale: {x: 0.3509792, y: 0.9323457, z: 0.46263927}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 664264725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.4, y: -3.8}
+  m_AnchoredPosition: {x: 13.7, y: -5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1649010129
@@ -1768,7 +1768,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Upon doing so a Minigame will pop up relating to the body part you are
-    fixing
+    fixing.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1872,14 +1872,14 @@ RectTransform:
   m_GameObject: {fileID: 1970724536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.30037498, y: 1, z: 0.48737}
+  m_LocalScale: {x: 0.36142704, y: 1.2032528, z: 0.5864293}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 664264725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.4, y: -14.4}
+  m_AnchoredPosition: {x: 14.8, y: -14.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1970724538

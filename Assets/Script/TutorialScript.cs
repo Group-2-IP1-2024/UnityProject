@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialScript : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class TutorialScript : MonoBehaviour
 
     public void Endtut()
     {
+        SceneManager.LoadScene("Main Game");
         Time.timeScale = 1f;
     }
 
