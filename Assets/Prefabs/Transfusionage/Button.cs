@@ -75,6 +75,15 @@ public class Button : MonoBehaviour
             {
                 TimerDone.GetComponent<MeshRenderer>().material.color = Color.gray;
             }
+            if(pressedTimer >= 5)
+            {
+                TimerDone.GetComponent<MeshRenderer>().material.color = Color.red;
+            }
+            if(pressedTimer >= 6)
+            {
+                GameObject.Find("Lose1").GetComponent<ParticleSystem>().Play();
+                GameObject.Find("Lose2").GetComponent<ParticleSystem>().Play();
+            }
             pressedTimer += Time.deltaTime;
         }
     }
