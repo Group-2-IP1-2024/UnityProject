@@ -676,8 +676,11 @@ Transform:
   - {fileID: 509104507462476494}
   - {fileID: 3252392745792245567}
   - {fileID: 4656193601564207422}
+<<<<<<< HEAD
   - {fileID: 7274891366905940457}
   - {fileID: 1229439506163485790}
+=======
+>>>>>>> main
   - {fileID: 1424568497912084818}
   - {fileID: 8807673713659988143}
   - {fileID: 230401812706482286}
@@ -11182,6 +11185,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &6147688106926100482
 GameObject:
   m_ObjectHideFlags: 0
@@ -16010,6 +16014,8 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+=======
+>>>>>>> main
 --- !u!1 &6572764757629916982
 GameObject:
   m_ObjectHideFlags: 0
@@ -17004,6 +17010,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &9079057979947960194
 GameObject:
   m_ObjectHideFlags: 0
@@ -21832,3 +21839,5 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+=======
+>>>>>>> main
