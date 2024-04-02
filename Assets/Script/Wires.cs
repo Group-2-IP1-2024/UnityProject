@@ -6,11 +6,14 @@ using UnityEngine;
 
 public class Wires : MonoBehaviour
 {
-   
+    private bool conditionMet = false;
+
+
     private LineRenderer line;
     [SerializeField] private string destinationTag;
 
     Vector3 offset;
+    
 
      private void Start()
     {
@@ -40,6 +43,13 @@ public class Wires : MonoBehaviour
             {
                 line.SetPosition(0, hitInfo.transform.position);
                 transform.gameObject.GetComponent<Collider>().enabled = false;
+
+                // Set the condition to true when the action is done
+                conditionMet = true;
+
+                // Call the method in GameController to inform that a condition is met
+                GameController.ConditionMet();
+
             }
             else
             {
@@ -54,5 +64,8 @@ public class Wires : MonoBehaviour
         mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
     }
+
+        
+        
 }
 
