@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Vaccination Station
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: d3ec5ddf95d3c9440806c1d439a6f75e, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -319,6 +319,13 @@ PlayerSettings:
       m_Icon: {fileID: 0}
       m_Width: 16
       m_Height: 16
+      m_Kind: 0
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 862695c9117776146bbc58fe9ccb3411, type: 3}
+      m_Width: 128
+      m_Height: 128
       m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: iPhone
@@ -873,8 +880,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Vaccination Station
-  metroPackageVersion: 
+  metroPackageName: VaccinationStation
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -882,7 +889,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Vaccination Station
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Vaccination Station
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
