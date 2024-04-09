@@ -20,7 +20,15 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
-        timerText.text = currentTime.ToString("0.0");
+        if (currentTime <= 0)
+        {
+            Debug.Log("You Lose!, L");
+        }
+        else
+        {
+            currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
+            timerText.text = currentTime.ToString("0.0");           
+        }
+
     }
 }
