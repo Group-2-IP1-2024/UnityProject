@@ -7,6 +7,7 @@ TagManager:
   - WP1
   - WP2
   - WP3
+  - Skin
   layers:
   - Default
   - TransparentFX

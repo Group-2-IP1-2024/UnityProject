@@ -13,6 +13,10 @@ public class CharacterScrip : MonoBehaviour
     public GameObject organs;
     public GameObject topOrgans;
 
+    public GameObject skin;
+
+    public GameObject organControllerObject;
+
     public character _character = character.Chicken;
     public State state = State.Closed;
     
@@ -54,15 +58,11 @@ public class CharacterScrip : MonoBehaviour
                 switch(state)
                 {
                     case State.Closed:
-                        sideCharacter.GetComponent<Image>().sprite = chickenClosed;
                         topCharacter.GetComponent<Image>().sprite = topChickenClosed;
-                        organs.SetActive(false);
                         topOrgans.SetActive(false);
                         break;
                     case State.Opened:
-                        sideCharacter.GetComponent<Image>().sprite = chickenOpen;
                         topCharacter.GetComponent<Image>().sprite = topChickenOpen;
-                        organs.SetActive(true);
                         topOrgans.SetActive(true);
                         break;
                 }
@@ -71,15 +71,11 @@ public class CharacterScrip : MonoBehaviour
                 switch (state)
                 {
                     case State.Closed:
-                        sideCharacter.GetComponent<Image>().sprite = paperClosed;
                         topCharacter.GetComponent<Image>().sprite = topPaperClosed;
-                        organs.SetActive(false);
                         topOrgans.SetActive(false);
                         break;
                     case State.Opened:
-                        sideCharacter.GetComponent<Image>().sprite = paperOpen;
                         topCharacter.GetComponent<Image>().sprite = topPaperOpen;
-                        organs.SetActive(true);
                         topOrgans.SetActive(true);
                         break;
                 }
@@ -88,15 +84,11 @@ public class CharacterScrip : MonoBehaviour
                 switch (state)
                 {
                     case State.Closed:
-                        sideCharacter.GetComponent<Image>().sprite = robotClosed;
                         topCharacter.GetComponent<Image>().sprite = topRobotClosed;
-                        organs.SetActive(false);
                         topOrgans.SetActive(false);
                         break;
                     case State.Opened:
-                        sideCharacter.GetComponent<Image>().sprite = robotOpen;
                         topCharacter.GetComponent<Image>().sprite = topRobotOpen;
-                        organs.SetActive(true);
                         topOrgans.SetActive(true);
                         break;
                 }

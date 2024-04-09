@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TransfusionScript : MonoBehaviour
 {
-
     public static GameObject onButton;
 
     private bool isPressed = false;
@@ -41,6 +41,8 @@ public class TransfusionScript : MonoBehaviour
         if (pressedTimer >= TimeForLongPress)
         {
             resetall();
+            GameObject.Find("SceneManager").GetComponent<CharacterScrip>().skin.SetActive(true);
+            GameObject.Find("SceneManager").GetComponent<CharacterScrip>().organControllerObject.GetComponent<OrganController>().minigameComplete = true;
             Destroy(gameObject.transform.parent.transform.parent.transform.parent.gameObject);
             hasWinded = true;
         }

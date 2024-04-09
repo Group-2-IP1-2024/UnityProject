@@ -11,6 +11,8 @@ public class OrganController : MonoBehaviour
     public GameObject SceneManager;
     public GameObject toolcontroller;
 
+    public bool minigameComplete = false;
+
     public Texture2D toolCursor;
     public enum Organ
     {
@@ -60,6 +62,13 @@ public class OrganController : MonoBehaviour
                 case Organ.Lung:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
                         oGO.SetActive(false);
+                    break;
+                case Organ.Skin:
+                    if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Needle && minigameComplete == true)
+                    {
+                        SceneManager.GetComponent<CharacterScrip>().state = CharacterScrip.State.Closed;
+                        oGO.SetActive(false);
+                    }
                     break;
 
             }
