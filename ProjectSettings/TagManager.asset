@@ -50,3 +50,6 @@ TagManager:
   - name: Particle blocking
     uniqueID: 517831521
     locked: 0
+  - name: Minigame
+    uniqueID: 1051538505
+    locked: 0

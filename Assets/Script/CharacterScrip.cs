@@ -2,32 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 public class CharacterScrip : MonoBehaviour
 {
-    public GameObject character;
+    //public GameObject character;
 
-    public bool isChicken = true;
+    public GameObject sideCharacter;
+    public GameObject topCharacter;
 
-    public bool isPaper = false;
+    public GameObject organs;
+    public GameObject topOrgans;
 
-    public bool isRobot = false;
-    
+    public character _character = character.Chicken;
     public State state = State.Closed;
     
     public Sprite chickenClosed;
+    public Sprite topChickenClosed;
     public Sprite chickenOpen;
-    public Sprite chickenOrgans;
+    public Sprite topChickenOpen;
     public Sprite paperClosed;
+    public Sprite topPaperClosed;
     public Sprite paperOpen;
-    public Sprite paperOrgans;
+    public Sprite topPaperOpen;
     public Sprite robotClosed;
+    public Sprite topRobotClosed;
     public Sprite robotOpen;
-    public Sprite robotOrgans;
+    public Sprite topRobotOpen;
+
     public enum State
     {
         Closed,
-        Opened,
-        Organs
+        Opened
+    }
+    public enum character
+    {
+        Chicken,
+        Paper,
+        Robot
     }
     // Start is called before the first frame update
     void Start()
@@ -37,31 +48,59 @@ public class CharacterScrip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isChicken)
+        switch(_character)
         {
-            switch (state)
-            {
-                case State.Closed:
-                    character.GetComponent<UnityEngine.UI.Image>().sprite = chickenClosed;
-                    break;
-                case State.Opened:
-                    character.GetComponent<UnityEngine.UI.Image>().sprite = chickenOpen;
-                    break;
-                case State.Organs:
-                    character.GetComponent<UnityEngine.UI.Image>().sprite = chickenOrgans;
-                    break;
-            }
-            //character.GetComponent<UnityEngine.UI.Image>().sprite
-        }
-
-        if (isPaper)
-        {
-            switch (state)
-            {
-                case State.Closed:
-                    //character.GetComponent<UnityEngine.UI.Image>().sprite = 
-                    break;
-            }
+            case character.Chicken:
+                switch(state)
+                {
+                    case State.Closed:
+                        sideCharacter.GetComponent<Image>().sprite = chickenClosed;
+                        topCharacter.GetComponent<Image>().sprite = topChickenClosed;
+                        organs.SetActive(false);
+                        topOrgans.SetActive(false);
+                        break;
+                    case State.Opened:
+                        sideCharacter.GetComponent<Image>().sprite = chickenOpen;
+                        topCharacter.GetComponent<Image>().sprite = topChickenOpen;
+                        organs.SetActive(true);
+                        topOrgans.SetActive(true);
+                        break;
+                }
+                break;
+            case character.Paper:
+                switch (state)
+                {
+                    case State.Closed:
+                        sideCharacter.GetComponent<Image>().sprite = paperClosed;
+                        topCharacter.GetComponent<Image>().sprite = topPaperClosed;
+                        organs.SetActive(false);
+                        topOrgans.SetActive(false);
+                        break;
+                    case State.Opened:
+                        sideCharacter.GetComponent<Image>().sprite = paperOpen;
+                        topCharacter.GetComponent<Image>().sprite = topPaperOpen;
+                        organs.SetActive(true);
+                        topOrgans.SetActive(true);
+                        break;
+                }
+                break;
+            case character.Robot:
+                switch (state)
+                {
+                    case State.Closed:
+                        sideCharacter.GetComponent<Image>().sprite = robotClosed;
+                        topCharacter.GetComponent<Image>().sprite = topRobotClosed;
+                        organs.SetActive(false);
+                        topOrgans.SetActive(false);
+                        break;
+                    case State.Opened:
+                        sideCharacter.GetComponent<Image>().sprite = robotOpen;
+                        topCharacter.GetComponent<Image>().sprite = topRobotOpen;
+                        organs.SetActive(true);
+                        topOrgans.SetActive(true);
+                        break;
+                }
+                break;
         }
     }
 }

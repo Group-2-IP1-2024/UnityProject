@@ -41,7 +41,7 @@ public class TransfusionScript : MonoBehaviour
         if (pressedTimer >= TimeForLongPress)
         {
             resetall();
-            Debug.Log("Win confition met!");
+            Destroy(gameObject.transform.parent.transform.parent.transform.parent.gameObject);
             hasWinded = true;
         }
         else

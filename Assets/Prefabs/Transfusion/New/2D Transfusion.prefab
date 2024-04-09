@@ -15376,7 +15376,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9062
   m_TargetDisplay: 0
 --- !u!114 &8439518622258027473
 MonoBehaviour:
@@ -20645,7 +20645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e8668ff0e9132468340423d77b744f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeForLongPress: 4
+  TimeForLongPress: 2
   up: {fileID: 1545670802271502019}
   up1: {fileID: 2577244270370558923}
   down: {fileID: 7385609995884229317}
