@@ -836,7 +836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &224599117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,6 +1355,7 @@ GameObject:
   - component: {fileID: 462679275}
   - component: {fileID: 462679276}
   - component: {fileID: 462679277}
+  - component: {fileID: 462679278}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1392,7 +1393,7 @@ MonoBehaviour:
   cameraBrain: {fileID: 1453766023}
   sideCamera: {fileID: 65702495291829940}
   topCamera: {fileID: 1356876202}
-  sideCanvas: {fileID: 0}
+  sideCanvas: {fileID: 224599116}
   topCanvas: {fileID: 72948704}
 --- !u!114 &462679277
 MonoBehaviour:
@@ -1406,9 +1407,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68eea4f7373654f4ba0b8f0e2a24c6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sideCharacter: {fileID: 0}
+  sideCharacter: {fileID: 2003336603}
   topCharacter: {fileID: 2052838728}
-  organs: {fileID: 0}
+  organs: {fileID: 1334128452}
   topOrgans: {fileID: 648995317}
   skin: {fileID: 1230498683}
   organControllerObject: {fileID: 1467227313}
@@ -1426,6 +1427,32 @@ MonoBehaviour:
   topRobotClosed: {fileID: 21300000, guid: 1df1bbfdd10e13442a5543a74dfa58a6, type: 3}
   robotOpen: {fileID: 21300000, guid: 1df1bbfdd10e13442a5543a74dfa58a6, type: 3}
   topRobotOpen: {fileID: 21300000, guid: 1df1bbfdd10e13442a5543a74dfa58a6, type: 3}
+--- !u!114 &462679278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462679273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d45ea6eb46e8f42b60cb87e033a11c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TopCanvas: {fileID: 72948704}
+  SideCanvas: {fileID: 224599116}
+  Kidney: {fileID: 178067811}
+  Heart: {fileID: 1525417973}
+  Liver: {fileID: 1709235963}
+  Lung: {fileID: 1715916031}
+  Ribcage: {fileID: 431032002}
+  Skin: {fileID: 1230498683}
+  _Kidney: {fileID: 2102523524}
+  _Heart: {fileID: 484742705}
+  _Liver: {fileID: 240529842}
+  _Lung: {fileID: 457363434}
+  _Ribcage: {fileID: 661182350}
+  _Skin: {fileID: 97709663}
 --- !u!1 &474104081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1792,7 +1819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639766838}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3928,6 +3955,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transfusionPrefab: {fileID: 2557997730956792773, guid: 31876c7133ac69c4aba2fe05b2d63fbe,
     type: 3}
+  xrayPrefab: {fileID: 0}
+  vainPrefab: {fileID: 0}
+  stitchPrefab: {fileID: 0}
+  SlaveOrgans: {fileID: 1334128452}
   SceneManager: {fileID: 462679273}
   toolcontroller: {fileID: 1952837579}
   minigameComplete: 0

@@ -41,14 +41,14 @@ public class OrganController : MonoBehaviour
                 case Organ.Ribcage:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scissors)
                         oGO.SetActive(false);
-                    SlaveOrgans.GetComponentsInChildren<global::Organ>()
-                        .FirstOrDefault(x => x.OrganType == Organ.Ribcage).gameObject.SetActive(false);
+                    SceneManager.GetComponent<OrganSync>().organs[4].state =
+                        false;
                     break;
                 case Organ.Heart:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
                         oGO.SetActive(false);
-                    SlaveOrgans.GetComponentsInChildren<global::Organ>()
-                        .FirstOrDefault(x => x.OrganType == Organ.Heart).gameObject.SetActive(false);
+                    SceneManager.GetComponent<OrganSync>().organs[1].state =
+                        false;
                     Cursor.SetCursor(toolCursor, new Vector2(toolCursor.width * 0.5f, toolCursor.height * 0.5f), CursorMode.Auto);
                     toolcontroller.GetComponent<ToolControllerv2>()._tool = ToolControllerv2.tool.Default;
                     Instantiate(transfusionPrefab, new Vector3(15.15f, 0, 0), Quaternion.Euler(0, 0, 0));
@@ -57,28 +57,28 @@ public class OrganController : MonoBehaviour
                 case Organ.Kidney:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
                         oGO.SetActive(false);
-                    SlaveOrgans.GetComponentsInChildren<global::Organ>()
-                        .FirstOrDefault(x => x.OrganType == Organ.Kidney).gameObject.SetActive(false);
+                    SceneManager.GetComponent<OrganSync>().organs[0].state =
+                        false;
                     break;
                 case Organ.Liver:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
                         oGO.SetActive(false);
-                    SlaveOrgans.GetComponentsInChildren<global::Organ>()
-                        .FirstOrDefault(x => x.OrganType == Organ.Liver).gameObject.SetActive(false);
+                    SceneManager.GetComponent<OrganSync>().organs[2].state =
+                        false;
                     break;
                 case Organ.Lung:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
                         oGO.SetActive(false);
-                    SlaveOrgans.GetComponentsInChildren<global::Organ>()
-                        .FirstOrDefault(x => x.OrganType == Organ.Lung).gameObject.SetActive(false);
+                    SceneManager.GetComponent<OrganSync>().organs[3].state =
+                        false;
                     break;
                 case Organ.Skin:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Needle && minigameComplete == true)
                     {
                         SceneManager.GetComponent<CharacterScrip>().state = CharacterScrip.State.Closed;
                         oGO.SetActive(false);
-                        SlaveOrgans.GetComponentsInChildren<global::Organ>()
-                            .FirstOrDefault(x => x.OrganType == Organ.Skin).gameObject.SetActive(false);
+                        SceneManager.GetComponent<OrganSync>().organs[5].state =
+                            false;
                     }
                     break;
 
@@ -88,7 +88,7 @@ public class OrganController : MonoBehaviour
         {
             SceneManager.GetComponent<CharacterScrip>().state = CharacterScrip.State.Opened;
             oGO.SetActive(false);
-            
+            SceneManager.GetComponent<OrganSync>().organs[5].state = false;
         }
     }
 }
