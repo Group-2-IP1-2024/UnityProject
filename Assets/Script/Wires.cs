@@ -7,6 +7,7 @@ using UnityEngine;
 public class Wires : MonoBehaviour
 {
     private bool conditionMet = false;
+    public AudioSource audioSFX;
 
 
     private LineRenderer line;
@@ -41,6 +42,7 @@ public class Wires : MonoBehaviour
         {
             if (hitInfo.transform.tag == destinationTag)
             {
+                audioSFX.Play();
                 line.SetPosition(0, hitInfo.transform.position);
                 transform.gameObject.GetComponent<Collider>().enabled = false;
 

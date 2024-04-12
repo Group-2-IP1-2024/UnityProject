@@ -6,10 +6,12 @@ using UnityEngine;
 public class Tool : MonoBehaviour
 {
     public Texture2D toolCursor;
+    public AudioSource audioSFX;
 
     private void OnMouseUpAsButton()
     {
         Debug.Log($"Button Clicked {name}");
+        audioSFX.Play();
         Cursor.SetCursor(toolCursor, new Vector2(toolCursor.width * 0.5f, toolCursor.height * 0.5f), CursorMode.ForceSoftware);
         switch (name)
         {
