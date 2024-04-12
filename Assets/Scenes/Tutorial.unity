@@ -2546,6 +2546,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transfusionPrefab: {fileID: 2557997730956792773, guid: 31876c7133ac69c4aba2fe05b2d63fbe,
     type: 3}
+  xrayPrefab: {fileID: 0}
+  vainPrefab: {fileID: 0}
+  stitchPrefab: {fileID: 0}
+  SlaveOrgans: {fileID: 0}
   SceneManager: {fileID: 0}
   toolcontroller: {fileID: 1895016806}
   minigameComplete: 0
@@ -11556,7 +11560,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 0972b6daa9c61314495e65cb4d8708f5,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 55441673fadafc343a81a1201d5107c8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
