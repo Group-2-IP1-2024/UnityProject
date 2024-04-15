@@ -1,9 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 public class clicklogicscrip : MonoBehaviour
 {
     public yummyscrip bam;
@@ -20,11 +23,14 @@ public class clicklogicscrip : MonoBehaviour
         {
             print("win");
             blam.GetComponent<Image>().sprite = yes;
+            SceneManager.LoadScene("Win");
+            Destroy(this.gameObject);
         }
         else
         {
             print("lose");
             blam.GetComponent<Image>().sprite = no;
+            SceneManager.LoadScene("Lose");
         }
         blam.SetActive(true);
 
@@ -37,11 +43,14 @@ public class clicklogicscrip : MonoBehaviour
         {
             print("win");
             blam.GetComponent<Image>().sprite = yes;
+            SceneManager.LoadScene("Win");
+            Destroy(this.gameObject);
         }
         else
         {
             print("lose");
             blam.GetComponent<Image>().sprite = no;
+            SceneManager.LoadScene("Lose");
         }
         blam.SetActive(true);
     }
@@ -52,11 +61,14 @@ public class clicklogicscrip : MonoBehaviour
         {
             print("win");
             blam.GetComponent<Image>().sprite = yes;
+            SceneManager.LoadScene("Win");
+            Destroy(this.gameObject);
         }
         else
         {
             print("lose");
             blam.GetComponent<Image>().sprite = no;
+            SceneManager.LoadScene("Lose");
         }
         blam.SetActive(true);
     }
@@ -68,11 +80,14 @@ public class clicklogicscrip : MonoBehaviour
         {
             print("win");
             blam.GetComponent<Image>().sprite = yes;
+            SceneManager.LoadScene("Win");
+            Destroy(this.gameObject);
         }
         else
         {
             print("lose");
             blam.GetComponent<Image>().sprite = no;
+            SceneManager.LoadScene("Lose");
         }
         blam.SetActive(true);
     }
@@ -83,11 +98,14 @@ public class clicklogicscrip : MonoBehaviour
         {
             print("win");
             blam.GetComponent<Image>().sprite = yes;
+            SceneManager.LoadScene("Win");
+            Destroy(this.gameObject);
         }
         else
         {
             print("lose");
             blam.GetComponent<Image>().sprite = no;
+            SceneManager.LoadScene("Lose");
         }
         blam.SetActive(true);
     }
@@ -98,11 +116,14 @@ public class clicklogicscrip : MonoBehaviour
         {
             print("win");
             blam.GetComponent<Image>().sprite = yes;
+            SceneManager.LoadScene("Win");
+            Destroy(this.gameObject);
         }
         else
         {
             print("lose");
             blam.GetComponent<Image>().sprite = no;
+            SceneManager.LoadScene("Lose");
         }
         blam.SetActive(true);
     }

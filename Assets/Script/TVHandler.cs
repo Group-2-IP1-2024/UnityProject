@@ -18,7 +18,7 @@ public class TVHandler : MonoBehaviour
     {
         var rnd = new System.Random();
         organ = rnd.Next(0, 3);
-        switch (0)
+        switch (organ)
         {
             case 0:
                 Heart.SetActive(true);

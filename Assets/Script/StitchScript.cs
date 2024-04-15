@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,8 @@ public class StitchScript : MonoBehaviour
     public Camera m_camera;
     public GameObject brushPink;
     LineRenderer lineRen;
+
+    public bool didBreakCollider = false;
 
     Vector3 lastPos;
     void Update()
@@ -50,6 +53,8 @@ public class StitchScript : MonoBehaviour
     {
         GameObject brushInstance = Instantiate(brushPink);
         lineRen = brushInstance.GetComponent<LineRenderer>();
+        lineRen.sortingOrder = 999;
+        lineRen.sortingLayerName = "Minigame";
         Vector3 mousePos = MouseWorldPosition();
         lineRen.SetPosition(0, mousePos);
         lineRen.SetPosition(1, mousePos);
@@ -59,5 +64,26 @@ public class StitchScript : MonoBehaviour
         Vector3 mouseScreenPos = Input.mousePosition;
         mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("stitch"))
+        {
+            Debug.Log("Collider barrier broken");
+            didBreakCollider = true;
+        }
+    }
+
+    private void OnMouseUp()
+    {
+        if (didBreakCollider)
+        {
+            Debug.Log("Loss");
+        }
+        else
+        {
+            Debug.Log("Win");
+        }
     }
 }

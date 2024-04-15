@@ -201,6 +201,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireGame
       objectReference: {fileID: 0}
+    - target: {fileID: 6219291771495487614, guid: b8b983e4cdecdea49b48b0cb25e30978,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6569285343041748939, guid: b8b983e4cdecdea49b48b0cb25e30978,
         type: 3}
       propertyPath: currentTime

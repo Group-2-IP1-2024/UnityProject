@@ -8,6 +8,7 @@ public class ToolControllerv2 : MonoBehaviour
     public tool _tool;
     public enum tool
     {
+        MagnifyingGlass,
         Scalpel,
         Scissors,
         Needle,

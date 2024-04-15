@@ -40,37 +40,58 @@ public class OrganController : MonoBehaviour
             {
                 case Organ.Ribcage:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scissors)
+                    {
                         oGO.SetActive(false);
-                    SceneManager.GetComponent<OrganSync>().organs[4].state =
-                        false;
+                        SceneManager.GetComponent<OrganSync>().organs[4].state =
+                            false;
+                    }
+
                     break;
                 case Organ.Heart:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
+                    {
                         oGO.SetActive(false);
-                    SceneManager.GetComponent<OrganSync>().organs[1].state =
-                        false;
-                    Cursor.SetCursor(toolCursor, new Vector2(toolCursor.width * 0.5f, toolCursor.height * 0.5f), CursorMode.Auto);
-                    toolcontroller.GetComponent<ToolControllerv2>()._tool = ToolControllerv2.tool.Default;
-                    Instantiate(transfusionPrefab, new Vector3(15.15f, 0, 0), Quaternion.Euler(0, 0, 0));
+                        SceneManager.GetComponent<OrganSync>().organs[1].state =
+                            false;
+                        Cursor.SetCursor(toolCursor, new Vector2(toolCursor.width * 0.5f, toolCursor.height * 0.5f),
+                            CursorMode.Auto);
+                        toolcontroller.GetComponent<ToolControllerv2>()._tool = ToolControllerv2.tool.Default;
+                        Instantiate(transfusionPrefab, new Vector3(15.15f, 0, 0), Quaternion.Euler(0, 0, 0));
+                    }
 
                     break;
                 case Organ.Kidney:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
+                    {
                         oGO.SetActive(false);
-                    SceneManager.GetComponent<OrganSync>().organs[0].state =
-                        false;
+                        SceneManager.GetComponent<OrganSync>().organs[0].state =
+                            false;
+                    }
+
                     break;
                 case Organ.Liver:
-                    if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
+                    if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.MagnifyingGlass)
+                    {
                         oGO.SetActive(false);
-                    SceneManager.GetComponent<OrganSync>().organs[2].state =
-                        false;
+                        SceneManager.GetComponent<OrganSync>().organs[2].state =
+                            false;
+                        Cursor.SetCursor(toolCursor, new Vector2(toolCursor.width * 0.5f, toolCursor.height * 0.5f), CursorMode.Auto);
+                        toolcontroller.GetComponent<ToolControllerv2>()._tool = ToolControllerv2.tool.Default;
+                        Instantiate(xrayPrefab, new Vector3(15.15f, 0, 0), Quaternion.Euler(0, 0, 0));
+                    }
+
                     break;
                 case Organ.Lung:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
+                    {
                         oGO.SetActive(false);
-                    SceneManager.GetComponent<OrganSync>().organs[3].state =
-                        false;
+                        SceneManager.GetComponent<OrganSync>().organs[3].state =
+                            false;
+                        Cursor.SetCursor(toolCursor, new Vector2(toolCursor.width * 0.5f, toolCursor.height * 0.5f), CursorMode.Auto);
+                        toolcontroller.GetComponent<ToolControllerv2>()._tool = ToolControllerv2.tool.Default;
+                        Instantiate(vainPrefab, new Vector3(15.15f, 99, 0), Quaternion.Euler(0, 0, 0));
+                    }
+
                     break;
                 case Organ.Skin:
                     if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Needle && minigameComplete == true)

@@ -43,13 +43,16 @@ public class TransfusionScript : MonoBehaviour
             resetall();
             GameObject.Find("SceneManager").GetComponent<CharacterScrip>().skin.SetActive(true);
             GameObject.Find("SceneManager").GetComponent<CharacterScrip>().organControllerObject.GetComponent<OrganController>().minigameComplete = true;
+            SceneManager.LoadScene("Win");
             Destroy(gameObject.transform.parent.transform.parent.transform.parent.gameObject);
             hasWinded = true;
+            
         }
         else
         {
             Debug.Log("Mouse button released early!");
             resetall();
+            SceneManager.LoadScene("Lose");
         }
     }
 

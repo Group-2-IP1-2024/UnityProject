@@ -8,6 +8,7 @@ TagManager:
   - WP2
   - WP3
   - Skin
+  - stitch
   layers:
   - Default
   - TransparentFX

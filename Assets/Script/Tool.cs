@@ -24,6 +24,9 @@ public class Tool : MonoBehaviour
             case "Needle":
                 this.GetComponentInParent<ToolControllerv2>()._tool = ToolControllerv2.tool.Needle;
                 break;
+            case "MagnifyingGlass":
+                this.GetComponentInParent<ToolControllerv2>()._tool = ToolControllerv2.tool.MagnifyingGlass;
+                break;
         }
     }
 }

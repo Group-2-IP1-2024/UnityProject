@@ -59,11 +59,15 @@ public class CharacterScrip : MonoBehaviour
                 {
                     case State.Closed:
                         topCharacter.GetComponent<Image>().sprite = topChickenClosed;
+                        sideCharacter.GetComponent<Image>().sprite = chickenClosed;
                         topOrgans.SetActive(false);
+                        organs.SetActive(false);
                         break;
                     case State.Opened:
                         topCharacter.GetComponent<Image>().sprite = topChickenOpen;
+                        sideCharacter.GetComponent<Image>().sprite = chickenOpen;
                         topOrgans.SetActive(true);
+                        organs.SetActive(true);
                         break;
                 }
                 break;
@@ -72,11 +76,15 @@ public class CharacterScrip : MonoBehaviour
                 {
                     case State.Closed:
                         topCharacter.GetComponent<Image>().sprite = topPaperClosed;
+                        sideCharacter.GetComponent<Image>().sprite = paperClosed;
                         topOrgans.SetActive(false);
+                        organs.SetActive(false);
                         break;
                     case State.Opened:
                         topCharacter.GetComponent<Image>().sprite = topPaperOpen;
+                        topCharacter.GetComponent<Image>().sprite = paperOpen;
                         topOrgans.SetActive(true);
+                        organs.SetActive(true);
                         break;
                 }
                 break;

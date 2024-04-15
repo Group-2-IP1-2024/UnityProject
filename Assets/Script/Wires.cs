@@ -9,13 +9,10 @@ public class Wires : MonoBehaviour
     private bool conditionMet = false;
     public AudioSource audioSFX;
 
-
     private LineRenderer line;
     [SerializeField] private string destinationTag;
 
     Vector3 offset;
-    
-
      private void Start()
     {
         line = GetComponent<LineRenderer>();
@@ -50,7 +47,7 @@ public class Wires : MonoBehaviour
                 conditionMet = true;
 
                 // Call the method in GameController to inform that a condition is met
-                GameController.ConditionMet();
+                GameController.ConditionMet(this.gameObject.transform.parent.transform.parent.gameObject  );
 
             }
             else
@@ -66,8 +63,5 @@ public class Wires : MonoBehaviour
         mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
     }
-
-        
-        
 }
 
