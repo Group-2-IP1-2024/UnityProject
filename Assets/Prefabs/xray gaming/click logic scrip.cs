@@ -13,11 +13,13 @@ public class clicklogicscrip : MonoBehaviour
     public GameObject blam;
     public Sprite yes;
     public Sprite no;
+    public AudioSource audioSFX;
 
 
     //please ignore how i did this im lazy
     public void on_click_pink()
     {
+        audioSFX.Play();
         int slap = bam.rando;
         if (slap == 0)
         {
@@ -38,6 +40,7 @@ public class clicklogicscrip : MonoBehaviour
 
     public void on_click_red()
     {
+        audioSFX.Play();
         int slap = bam.rando;
         if (slap == 1)
         {
@@ -56,6 +59,7 @@ public class clicklogicscrip : MonoBehaviour
     }
     public void on_click_purple()
     {
+        audioSFX.Play();
         int slap = bam.rando;
         if (slap == 2)
         {
@@ -75,6 +79,7 @@ public class clicklogicscrip : MonoBehaviour
 
     public void on_click_orange()
     {
+        audioSFX.Play();
         int slap = bam.rando;
         if (slap == 3)
         {
@@ -93,6 +98,7 @@ public class clicklogicscrip : MonoBehaviour
     }
     public void on_click_yellow()
     {
+        audioSFX.Play();
         int slap = bam.rando;
         if (slap == 4)
         {
@@ -111,6 +117,7 @@ public class clicklogicscrip : MonoBehaviour
     }
     public void on_click_green()
     {
+        audioSFX.Play();
         int slap = bam.rando;
         if (slap == 5)
         {
