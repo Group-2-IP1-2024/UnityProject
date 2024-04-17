@@ -39,7 +39,7 @@ public class OrganController : MonoBehaviour
             switch (o)
             {
                 case Organ.Ribcage:
-                    if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scissors)
+                    if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
                     {
                         oGO.SetActive(false);
                         SceneManager.GetComponent<OrganSync>().organs[4].state =

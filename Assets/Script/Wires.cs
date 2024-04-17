@@ -13,7 +13,12 @@ public class Wires : MonoBehaviour
     [SerializeField] private string destinationTag;
 
     Vector3 offset;
-     private void Start()
+
+    private void Awake()
+    {
+        conditionMet = false;
+    }
+    private void Start()
     {
         line = GetComponent<LineRenderer>();
     }

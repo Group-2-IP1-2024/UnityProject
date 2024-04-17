@@ -66,11 +66,19 @@ public class StitchScript : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
     }
 
-    private void OnTriggerStay(Collider other)
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if (other.gameObject.CompareTag("stitch"))
+    //    {
+    //        Debug.Log("Collider barrier broken");
+    //        didBreakCollider = true;
+    //    }
+    //}
+
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("stitch"))
         {
-            Debug.Log("Collider barrier broken");
             didBreakCollider = true;
         }
     }
