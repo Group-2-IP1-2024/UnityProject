@@ -29,10 +29,10 @@ public class TVHandler : MonoBehaviour
                 break;
             case 1:
                 Heart.SetActive(false);
-                Kidney.SetActive(true);
-                Liver.SetActive(false);
+                Kidney.SetActive(false);
+                Liver.SetActive(true);
                 Lungs.SetActive(false);
-                _organ = OrganController.Organ.Kidney;
+                _organ = OrganController.Organ.Liver;
                 break;
             case 2:
                 Heart.SetActive(false);
