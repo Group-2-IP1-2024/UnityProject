@@ -12,11 +12,6 @@ public class TransfusionScript : MonoBehaviour
     private float pressedTimer = 0f;
     public float TimeForLongPress = 4f;
 
-    public GameObject up;
-    public GameObject up1;
-    public GameObject down;
-    public GameObject down1;
-
     public GameObject origbag;
     public GameObject destbag;
 
@@ -29,11 +24,6 @@ public class TransfusionScript : MonoBehaviour
     {
         Debug.Log("did thing");
         isPressed = true;
-        up.GetComponent<ParticleSystem>().Play();
-        up1.GetComponent<ParticleSystem>().Play();
-        down.GetComponent<ParticleSystem>().Play();
-        down1.GetComponent<ParticleSystem>().Play();
-
     }
 
     private void OnMouseUpAsButton()
@@ -60,10 +50,6 @@ public class TransfusionScript : MonoBehaviour
     {
         isPressed = false;
         pressedTimer = 0f;
-        up.GetComponent<ParticleSystem>().Stop();
-        up1.GetComponent<ParticleSystem>().Stop();
-        down.GetComponent<ParticleSystem>().Stop();
-        down1.GetComponent<ParticleSystem>().Stop();
     }
 
     // Start is called before the first frame update
