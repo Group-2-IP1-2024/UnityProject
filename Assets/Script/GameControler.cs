@@ -8,8 +8,14 @@ public class GameController : MonoBehaviour
     private static int numberOfConditionsMet = 0;
     private const int totalConditions = 3;
 
+
+    public void Start()
+    {
+        ResetConditions();
+    }
     public void Awake()
     {
+        ResetConditions();
         Debug.Log($"{this.gameObject.name}");
     }
 

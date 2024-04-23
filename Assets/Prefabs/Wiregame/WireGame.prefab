@@ -1586,6 +1586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1593009878517777442}
   - component: {fileID: 6569285343041748939}
+  - component: {fileID: 2588400995957780486}
   m_Layer: 0
   m_Name: timerManager
   m_TagString: Untagged
@@ -1623,6 +1624,24 @@ MonoBehaviour:
   timerText: {fileID: 5394163013321715089}
   currentTime: 15
   countDown: 1
+--- !u!114 &2588400995957780486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6105303665129704765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fe1f8e7ff1373248834583c5b156590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  mat4: {fileID: 0}
+  mat5: {fileID: 0}
+  mat6: {fileID: 0}
 --- !u!1 &6219291771495487614
 GameObject:
   m_ObjectHideFlags: 0

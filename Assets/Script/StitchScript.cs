@@ -12,6 +12,10 @@ public class StitchScript : MonoBehaviour
     public bool didBreakCollider = false;
 
     Vector3 lastPos;
+    private void Awake()
+    {
+        
+    }
     void Update()
     {
         Drawing();
