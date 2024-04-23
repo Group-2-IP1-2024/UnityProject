@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StitchScript : MonoBehaviour
 {
@@ -91,11 +92,11 @@ public class StitchScript : MonoBehaviour
     {
         if (didBreakCollider)
         {
-            Debug.Log("Loss");
+            SceneManager.LoadScene("Lose");
         }
         else
         {
-            Debug.Log("Win");
+            SceneManager.LoadScene("Win");
         }
     }
 }

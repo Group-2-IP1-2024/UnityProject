@@ -17,6 +17,7 @@ public class Wires : MonoBehaviour
     private void Awake()
     {
         conditionMet = false;
+        GameController.ResetConditions();
     }
     private void Start()
     {

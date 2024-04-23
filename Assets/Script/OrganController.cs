@@ -61,11 +61,15 @@ public class OrganController : MonoBehaviour
 
                     break;
                 case Organ.Kidney:
-                    if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Scalpel)
+                    if (toolcontroller.GetComponent<ToolControllerv2>()._tool == ToolControllerv2.tool.Needle)
                     {
                         oGO.SetActive(false);
                         SceneManager.GetComponent<OrganSync>().organs[0].state =
                             false;
+                        Cursor.SetCursor(toolCursor, new Vector2(toolCursor.width * 0.5f, toolCursor.height * 0.5f), CursorMode.Auto);
+                        toolcontroller.GetComponent<ToolControllerv2>()._tool = ToolControllerv2.tool.Default;
+                        Instantiate(stitchPrefab, new Vector3(15.15f, 0, 0), Quaternion.Euler(0, 0, 0));
+                        Debug.Log("slap");
                     }
 
                     break;
