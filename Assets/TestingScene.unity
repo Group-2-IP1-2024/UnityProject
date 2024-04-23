@@ -123,6 +123,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &377503014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6105303665129704765, guid: b8b983e4cdecdea49b48b0cb25e30978,
+    type: 3}
+  m_PrefabInstance: {fileID: 624911135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &377503017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377503014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fe1f8e7ff1373248834583c5b156590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat1: {fileID: 2100000, guid: 21c7d372622974940816e79fb1f8ba6f, type: 2}
+  mat2: {fileID: 2100000, guid: 410615a0f7c0c124a8d26db0cc9fd77b, type: 2}
+  mat3: {fileID: 2100000, guid: 47dc0d01c9471fd4aaef668b35b08215, type: 2}
+  mat4: {fileID: 2100000, guid: 54d3d1a2339edc14b92c69063f6ef3ee, type: 2}
+  mat5: {fileID: 2100000, guid: 3157c29f402539f4d93027b598310640, type: 2}
+  mat6: {fileID: 2100000, guid: d735680affdb78a4da75052677acc53f, type: 2}
 --- !u!1001 &624911135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -224,7 +248,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6105303665129704765, guid: b8b983e4cdecdea49b48b0cb25e30978,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 377503017}
   m_SourcePrefab: {fileID: 100100000, guid: b8b983e4cdecdea49b48b0cb25e30978, type: 3}
 --- !u!82 &1942439771 stripped
 AudioSource:
