@@ -96,7 +96,14 @@ public class StitchScript : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("Win");
+            if (GameObject.Find("TV").GetComponent<TVHandler>()._organ == OrganController.Organ.Kidney)
+            {
+                SceneManager.LoadScene("Win");
+            }
+            else
+            {
+                SceneManager.LoadScene("Lose");
+            }
         }
     }
 }

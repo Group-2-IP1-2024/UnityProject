@@ -23,10 +23,18 @@ public class clicklogicscrip : MonoBehaviour
         int slap = bam.rando;
         if (slap == 0)
         {
-            print("win");
-            blam.GetComponent<Image>().sprite = yes;
-            SceneManager.LoadScene("Win");
-            Destroy(this.gameObject);
+            if(GameObject.Find("TV").GetComponent<TVHandler>()._organ == OrganController.Organ.Liver){
+                print("win");
+                blam.GetComponent<Image>().sprite = yes;
+                SceneManager.LoadScene("Win");
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                print("lose");
+                blam.GetComponent<Image>().sprite = no;
+                SceneManager.LoadScene("Lose");
+            }
         }
         else
         {
@@ -44,10 +52,18 @@ public class clicklogicscrip : MonoBehaviour
         int slap = bam.rando;
         if (slap == 1)
         {
-            print("win");
-            blam.GetComponent<Image>().sprite = yes;
-            SceneManager.LoadScene("Win");
-            Destroy(this.gameObject);
+            if(GameObject.Find("TV").GetComponent<TVHandler>()._organ == OrganController.Organ.Liver){
+                print("win");
+                blam.GetComponent<Image>().sprite = yes;
+                SceneManager.LoadScene("Win");
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                print("lose");
+                blam.GetComponent<Image>().sprite = no;
+                SceneManager.LoadScene("Lose");
+            }
         }
         else
         {
@@ -63,10 +79,18 @@ public class clicklogicscrip : MonoBehaviour
         int slap = bam.rando;
         if (slap == 2)
         {
-            print("win");
-            blam.GetComponent<Image>().sprite = yes;
-            SceneManager.LoadScene("Win");
-            Destroy(this.gameObject);
+            if(GameObject.Find("TV").GetComponent<TVHandler>()._organ == OrganController.Organ.Liver){
+                print("win");
+                blam.GetComponent<Image>().sprite = yes;
+                SceneManager.LoadScene("Win");
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                print("lose");
+                blam.GetComponent<Image>().sprite = no;
+                SceneManager.LoadScene("Lose");
+            }
         }
         else
         {
@@ -83,10 +107,18 @@ public class clicklogicscrip : MonoBehaviour
         int slap = bam.rando;
         if (slap == 3)
         {
-            print("win");
-            blam.GetComponent<Image>().sprite = yes;
-            SceneManager.LoadScene("Win");
-            Destroy(this.gameObject);
+            if(GameObject.Find("TV").GetComponent<TVHandler>()._organ == OrganController.Organ.Liver){
+                print("win");
+                blam.GetComponent<Image>().sprite = yes;
+                SceneManager.LoadScene("Win");
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                print("lose");
+                blam.GetComponent<Image>().sprite = no;
+                SceneManager.LoadScene("Lose");
+            }
         }
         else
         {
@@ -102,10 +134,18 @@ public class clicklogicscrip : MonoBehaviour
         int slap = bam.rando;
         if (slap == 4)
         {
+            if(GameObject.Find("TV").GetComponent<TVHandler>()._organ == OrganController.Organ.Liver){
             print("win");
             blam.GetComponent<Image>().sprite = yes;
             SceneManager.LoadScene("Win");
             Destroy(this.gameObject);
+            }
+            else
+            {
+                print("lose");
+                blam.GetComponent<Image>().sprite = no;
+                SceneManager.LoadScene("Lose");
+            }
         }
         else
         {
@@ -121,10 +161,18 @@ public class clicklogicscrip : MonoBehaviour
         int slap = bam.rando;
         if (slap == 5)
         {
-            print("win");
-            blam.GetComponent<Image>().sprite = yes;
-            SceneManager.LoadScene("Win");
-            Destroy(this.gameObject);
+            if(GameObject.Find("TV").GetComponent<TVHandler>()._organ == OrganController.Organ.Liver){
+                print("win");
+                blam.GetComponent<Image>().sprite = yes;
+                SceneManager.LoadScene("Win");
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                print("lose");
+                blam.GetComponent<Image>().sprite = no;
+                SceneManager.LoadScene("Lose");
+            }
         }
         else
         {
